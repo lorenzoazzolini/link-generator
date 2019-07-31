@@ -1,15 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Madurai:700&display=swap");
+/* NAVBAR */
+.navbar {
+    border-bottom: 1px solid #eb5f52;
+    background: white;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    min-height: 110px;
+}
+
+.navbar > .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+
+    line-height: inherit;
+}
+
+.navbar-brand img {
+    margin: 4px 0;
+    max-width: 205px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        min-height: 75px;
+    }
+    .navbar-brand img {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* MAIN */
+main {
+    padding-top: 20px;
+}
+
+/* GENERATOR */
 textarea {
     width: 100%;
     max-width: 300px;
     height: 100px;
 }
 button {
+    border: 2px solid #4a4a4a;
+    padding: 8px 28px;
+    font-size: 18px;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    color: black;
     display: block;
+    max-width: 245px;
+    font-family: "Hind Madurai", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    border-color: #eb5f52;
+    color: #eb5f52;
 }
-label {
-    display: block;
+button:hover,
+button:active {
+    background: #eb5f52;
+    color: white;
+    cursor: pointer;
 }
-
-body {
-    padding: 20px;
+p.output {
+    margin-top: 20px;
 }
