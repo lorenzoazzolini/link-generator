@@ -1,0 +1,15 @@
+textarea {
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+}
+button {
+    display: block;
+}
+label {
+    display: block;
+}
+
+body {
+    padding: 20px;
+}
