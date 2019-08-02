@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Hind+Madurai:700&display=swap");
+
+*:focus {
+    outline: none;
+}
+
 /* NAVBAR */
 .navbar {
     border-bottom: 1px solid #eb5f52;
@@ -29,6 +34,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
 }
 .navbar > .container {
     display: -webkit-box;
@@ -97,12 +103,13 @@ main {
 }
 
 /* GENERATOR */
-textarea {
+#input {
     width: 100%;
     max-width: 300px;
     height: 100px;
 }
 button {
+    margin-top: 10px;
     border: 2px solid #4a4a4a;
     padding: 8px 28px;
     font-size: 18px;
@@ -117,6 +124,7 @@ button {
     font-weight: 600;
     border-color: #eb5f52;
     color: #eb5f52;
+    position: relative;
 }
 button:hover,
 button:active {
@@ -124,6 +132,44 @@ button:active {
     color: white;
     cursor: pointer;
 }
-p.output {
+#output {
     margin-top: 20px;
+    border: none;
+    resize: none;
+    background: #e6e6e6;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+button:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+#output {
+    resize: none;
+    width: 100%;
+    padding: 15px 10px 0px 10px;
 }
