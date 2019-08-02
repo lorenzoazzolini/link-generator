@@ -4,16 +4,18 @@ $(function () {
             shareText = $('#input').val();
         $('#output').html(urlBase + encodeURIComponent(shareText));
 
-        var copyText = document.getElementById("output");
-        copyText.select();
-        document.execCommand("copy");
+        
     });
-    $('.btn-whatsapp').on('mouseenter', function(){
-        console.log('foo')
+    $('#output').on('mouseenter', function(){
         $("#myTooltip").html('Copy to clipboard');
     });
-    $('.btn-whatsapp').on('mouseup', function(){
+    $('#output').on('mouseup', function(){
         $("#myTooltip").html('Copied to clipboard!');
+    });
+    $('#output').on('click', function(){
+        var copyText = document.getElementsByClass("input")[0];
+        copyText.select();
+        document.execCommand("copy");
     });
 });
 

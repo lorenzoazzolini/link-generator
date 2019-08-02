@@ -148,7 +148,7 @@ button:active {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
+    bottom: 79%;
     left: 50%;
     margin-left: -75px;
     opacity: 0;
@@ -164,12 +164,16 @@ button:active {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-button:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
+
 #output {
     resize: none;
     width: 100%;
     padding: 15px 10px 0px 10px;
+}
+.output-cont {
+    position: relative;
+}
+.output-cont:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
