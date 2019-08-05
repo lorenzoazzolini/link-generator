@@ -125,6 +125,7 @@ button {
     border-color: #eb5f52;
     color: #eb5f52;
     position: relative;
+    background: white;
 }
 button:hover,
 button:active {
