@@ -13,7 +13,7 @@ $(function () {
         $("#myTooltip").html('Copied to clipboard!');
     });
     $('#output').on('click', function(){
-        var copyText = document.getElementsByClass("input")[0];
+        var copyText = document.getElementById("output");
         copyText.select();
         document.execCommand("copy");
     });
