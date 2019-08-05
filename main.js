@@ -1,10 +1,10 @@
 $(function () {
     $('.btn-whatsapp').on('click', function () {
-        var urlBase = 'https://wa.me/?text=',
+        var urlBase = 'https://api.whatsapp.com/send?text=',
             shareText = $('#input').val();
         $('#output').html(urlBase + encodeURIComponent(shareText));
 
-        
+
     });
     $('#output').on('mouseenter', function(){
         $("#myTooltip").html('Copy to clipboard');
@@ -18,4 +18,3 @@ $(function () {
         document.execCommand("copy");
     });
 });
-
