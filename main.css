@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Hind+Madurai:700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;800&display=swap');
 
 *:focus {
     outline: none;
@@ -6,7 +6,7 @@
 
 /* NAVBAR */
 .navbar {
-    border-bottom: 1px solid #eb5f52;
+    border-bottom: 3px solid #ed1e79;
     background: white;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -109,7 +109,7 @@ main {
 }
 button {
     margin-top: 10px;
-    border: 2px solid #4a4a4a;
+    border: 2px solid #ed1e79;
     padding: 8px 28px;
     font-size: 18px;
     -webkit-transition: all 0.1s linear;
@@ -117,17 +117,17 @@ button {
     transition: all 0.1s linear;
     color: black;
     display: block;
-    font-family: "Hind Madurai", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
     font-weight: 600;
-    border-color: #eb5f52;
-    color: #eb5f52;
+    border-color: #000;
+    color: #000;
     position: relative;
     background: white;
 }
 button:hover,
 button:active {
-    background: #eb5f52;
+    background: #ed1e79;
     color: white;
     cursor: pointer;
 }
