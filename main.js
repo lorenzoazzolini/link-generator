@@ -18,3 +18,24 @@ $(function () {
         document.execCommand("copy");
     });
 });
+
+$(function () {
+    $('.btn-telegram').on('click', function () {
+        var urlBase = 'https://t.me/share/url?text=',
+            shareText = $('#input').val();
+        $('#output2').html(urlBase + encodeURIComponent(shareText));
+
+
+    });
+    $('#output2').on('mouseenter', function(){
+        $("#myTooltip2").html('Copy to clipboard');
+    });
+    $('#output2').on('mouseup', function(){
+        $("#myTooltip2").html('Copied to clipboard!');
+    });
+    $('#output2').on('click', function(){
+        var copyText = document.getElementById("output");
+        copyText.select();
+        document.execCommand("copy");
+    });
+});
