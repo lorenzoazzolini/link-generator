@@ -137,7 +137,30 @@ button:active {
     resize: none;
     background: #e6e6e6;
 }
+
+#output2 {
+    margin-top: 20px;
+    border: none;
+    resize: none;
+    background: #e6e6e6;
+}
 .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 79%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltiptext2 {
     visibility: hidden;
     width: 140px;
     background-color: #555;
@@ -163,8 +186,23 @@ button:active {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
+.tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
 
 #output {
+    resize: none;
+    width: 100%;
+    padding: 15px 10px 0px 10px;
+}
+#output2 {
     resize: none;
     width: 100%;
     padding: 15px 10px 0px 10px;
@@ -172,7 +210,14 @@ button:active {
 .output-cont {
     position: relative;
 }
+.output2-cont {
+    position: relative;
+}
 .output-cont:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.output2-cont:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
