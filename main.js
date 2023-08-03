@@ -21,7 +21,7 @@ $(function () {
 
 $(function () {
     $('.btn-telegram').on('click', function () {
-        var urlBase = 'https://t.me/share/url?text=',
+        var urlBase = 'https://t.me/share/url?url=&text=',
             shareText = $('#input').val();
         $('#output2').html(urlBase + encodeURIComponent(shareText));
 
