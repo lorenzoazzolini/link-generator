@@ -34,7 +34,7 @@ $(function () {
         $("#myTooltip2").html('Copied to clipboard!');
     });
     $('#output2').on('click', function(){
-        var copyText = document.getElementById("output");
+        var copyText = document.getElementById("output2");
         copyText.select();
         document.execCommand("copy");
     });
