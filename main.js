@@ -1,6 +1,6 @@
 $(function () {
     $('.btn-whatsapp').on('click', function () {
-        var urlBase = 'https://api.whatsapp.com/send?text=',
+        var urlBase = 'https://wa.me/?text=',
             shareText = $('#input').val();
         $('#output').html(urlBase + encodeURIComponent(shareText));
 
